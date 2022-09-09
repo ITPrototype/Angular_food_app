@@ -14,7 +14,8 @@ export class ItemComponent implements OnInit {
   title: string;
   price: number;
   image: string;
-  isfav: boolean
+  isfav: boolean;
+  type:string;
   icon: string = 'favorite_border'
   API: string = 'http://localhost:3000/food'
   private routeSubscription: Subscription;
@@ -23,13 +24,12 @@ export class ItemComponent implements OnInit {
     if (this.isfav === false) {
       this.isfav = true
       this.icon = 'favorite'
-      this.fservice.update(this.id, this.isfav)
+      this.fservice.update(this.id + 1, this.isfav,this.title,this.image,this.price,this.type)
     } else {
       this.isfav = false
       this.icon = 'favorite_border'
-      this.fservice.update(this.id, this.isfav)
+      this.fservice.update(this.id + 1, this.isfav,this.title,this.image,this.price,this.type)
     }
-    console.log('Click change:', this.isfav);
   }
   constructor(
     private route: ActivatedRoute,
@@ -42,6 +42,7 @@ export class ItemComponent implements OnInit {
         this.price = queryParam['price'];
         this.image = queryParam['img'];
         this.isfav = queryParam['isfavorite'];
+        this.type = queryParam['type']
       }
     )
   }
@@ -65,11 +66,11 @@ export class ItemComponent implements OnInit {
       if (this.isfav === true) {
         this.isfav = true
         this.icon = 'favorite'
-        this.fservice.update(this.id, this.isfav)
+        this.fservice.update(this.id + 1, this.isfav,this.title,this.image,this.price,this.type)
       } else {
         this.isfav = false
         this.icon = 'favorite_border'
-        this.fservice.update(this.id, this.isfav)
+        this.fservice.update(this.id + 1, this.isfav,this.title,this.image,this.price,this.type)
       }
     })
 
