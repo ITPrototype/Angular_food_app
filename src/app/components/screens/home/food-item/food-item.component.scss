@@ -1,0 +1,21 @@
+.item {
+    @apply bg-white rounded mb-2 p-4 block text-center;
+
+    &:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: 0.6s
+    }
+
+    >img {
+        @apply mb-2 mx-auto;
+        height: 190px;
+    }
+
+    .heading {
+        @apply font-medium mb-2 block text-lg;
+    }
+
+    .price {
+        @apply block text-orange-500 font-semibold;
+    }
+}

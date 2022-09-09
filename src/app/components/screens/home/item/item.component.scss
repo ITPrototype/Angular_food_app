@@ -1,0 +1,26 @@
+.item {
+    @apply p-16;
+
+    #icon_btn {
+        position: absolute;
+        top: 36px;
+        right: 36px;
+    }
+
+    .title {
+        @apply font-medium mb-2 block text-lg text-center;
+    }
+
+    .price {
+        @apply block text-orange-500 font-semibold text-center;
+    }
+
+    >button {}
+
+    .btn-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+}

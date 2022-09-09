@@ -1,0 +1,11 @@
+<div *ngFor="let item of favourite">
+    <div class="card">
+        <div class="title-image">
+            <img [src]="item.image" [alt]="item.title">
+            <h2>{{item.title}}</h2>
+        </div>
+        <div>
+            <span>{{item.price | currency:"Narx: "}}</span>
+        </div>
+    </div>
+</div>

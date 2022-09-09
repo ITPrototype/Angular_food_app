@@ -1,0 +1,36 @@
+.nav {
+    @apply bg-white px-5 py-4 fixed bottom-0 shadow;
+    width: 550px;
+    >ul {
+        @apply flex items-center justify-between;
+
+        >li {
+            >a {
+                .mat-icon{
+                    font-size: 30px;
+                    width: 100%;
+                }
+                @apply relative hover:text-orange-500;
+                transition: 0.4s;
+                color: grey;
+                &.active {
+                    @apply text-orange-500;
+
+                    &::after {
+                        @apply w-full bg-orange-500;
+                    }
+                }
+
+                &:hover::after {
+                    @apply w-full;
+                }
+
+                &::after {
+                    @apply w-0 h-0.5 rounded bg-orange-500 transition-all duration-300 absolute -bottom-1.5 left-0;
+                    content: '';
+
+                }
+            }
+        }
+    }
+}

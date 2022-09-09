@@ -1,0 +1,10 @@
+.filters {
+    @apply grid grid-cols-4 gap-8 px-6;
+
+    >button {
+        padding: 15px;
+    }
+}
+.active{
+    @apply bg-orange-200;
+}

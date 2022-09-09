@@ -1,0 +1,20 @@
+<div class="user" *ngIf="isUser">
+    <div class="userInfo">
+        <div class="user_pic_name">
+            <img [src]="profilePicture" [alt]="username">
+            <div class="emails">
+                <h2>{{username}}</h2>
+                <h5>{{email}}</h5>
+            </div>
+        </div>
+        <button mat-raised-button color="primary" (click)="logout()">
+            <mat-icon>exit_to_app</mat-icon>Chiqish
+        </button>
+    </div>
+
+</div>
+<div class="login_page" *ngIf="showLog">
+    <button mat-raised-button color="primary" (click)="login()">
+        <mat-icon>person</mat-icon>Google bilan kirish
+    </button>
+</div>

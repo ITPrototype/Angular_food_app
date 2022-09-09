@@ -1,0 +1,11 @@
+<nav class="nav">
+    <ul>
+        <li *ngFor="let icon of menuItems">
+            <a [routerLink]="icon.path" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                <mat-icon>
+                    {{icon.icon}}
+                </mat-icon>
+            </a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,11 @@
+<div class="item">
+    <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon" id="icon_btn" (click)="changeIcon()">
+        <mat-icon>{{icon}}</mat-icon>
+    </button>
+    <img [src]="image" [alt]="title">
+    <h2 class="title">{{title}}</h2>
+    <span class="price">{{price | currency:"SO'M: "}}</span>
+    <div class="btn-footer">
+        <button mat-raised-button color="warn" (click)="order()">Buyurtma</button>
+    </div>
+</div>

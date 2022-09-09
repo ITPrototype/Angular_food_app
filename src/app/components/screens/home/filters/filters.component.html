@@ -1,0 +1,22 @@
+<div class="filters">
+    <button (click)="handleFilter('burger')" [ngClass]="{
+        active:type === 'burger'
+    }">
+        <img src="https://cdn-icons-png.flaticon.com/512/596/596090.png" alt="hamburgers">
+    </button>
+    <button (click)="handleFilter('taco')" [ngClass]="{
+        active:type === 'taco'
+    }">
+        <img src="https://cdn-icons-png.flaticon.com/512/180/180610.png" alt="tacos">
+    </button>
+    <button (click)="handleFilter('drink')" [ngClass]="{
+        active:type === 'drink'
+    }">
+        <img src="https://cdn-icons-png.flaticon.com/512/77/77403.png" alt="drinks">
+    </button>
+    <button (click)="handleFilter('chicken')" [ngClass]="{
+        active:type === 'chicken'
+    }">
+        <img src="http://cdn.onlinewebfonts.com/svg/img_205096.png" alt="chickens">
+    </button>
+</div>

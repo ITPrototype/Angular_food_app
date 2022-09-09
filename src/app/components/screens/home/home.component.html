@@ -1,0 +1,7 @@
+<main>
+    <app-search (findFoods)="onSearch($event)"></app-search>
+    <app-filters (filterFoods)="onFilter($event)"></app-filters>
+    <div class="catalog">
+        <app-food-item *ngFor="let food of filteredFoods" [food]="food"></app-food-item>
+    </div>
+</main>
