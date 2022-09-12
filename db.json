@@ -3,17 +3,18 @@
     {
       "id": 1,
       "title": "Beef Burger",
-      "price": 18000,
+      "price": "18000",
       "type": "burger",
       "image": "https://www.pngkey.com/png/full/358-3587395_an-angus-beef-burger-from-mcdonalds-hamburger.png",
-      "isfavorite": true
+      "isfavorite": false
     },
     {
       "id": 2,
       "title": "Chicken Burger",
       "price": "15000",
+      "type": "burger",
       "image": "https://www.nicepng.com/png/full/196-1966624_chicken-burger-png-picture-a-w-habanero-chicken.png",
-      "isfavorite": true
+      "isfavorite": false
     },
     {
       "id": 3,
@@ -26,7 +27,7 @@
     {
       "id": 4,
       "title": "Cheese Burger",
-      "price": 17000,
+      "price": "17000",
       "type": "burger",
       "image": "https://www.pngplay.com/wp-content/uploads/1/Cheeseburger-PNG.png",
       "isfavorite": false
@@ -34,24 +35,26 @@
     {
       "id": 5,
       "title": "Taco",
-      "price": 24990,
+      "price": "24990",
       "type": "taco",
       "image": "https://www.pngall.com/wp-content/uploads/4/Taco-PNG-Picture.png",
-      "isfavorite": true
+      "isfavorite": false
     },
     {
       "id": 6,
       "title": "Coca Cola",
       "price": "10000",
+      "type": "drink",
       "image": "https://www.pngall.com/wp-content/uploads/2016/04/Coca-Cola-PNG-Picture.png",
-      "isfavorite": true
+      "isfavorite": false
     },
     {
       "id": 7,
       "title": "Chicken Wrap",
       "price": "22900",
+      "type": "chicken",
       "image": "https://www.nicepng.com/png/full/386-3867513_chicken-wrap-png-chicken-kebab-sandwich-png.png",
-      "isfavorite": true
+      "isfavorite": false
     },
     {
       "id": 8,

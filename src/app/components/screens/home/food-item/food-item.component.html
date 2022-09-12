@@ -1,7 +1,7 @@
 <a 
     [routerLink]="['/item',food.id - 1]"
     class="item"
-    [queryParams]="{'title':food.title,'img':food.image,'price':food.price}"
+    [queryParams]="{'title':food.title,'img':food.image,'price':food.price,'type':food.type}"
  >
     <img [src]="food.image" [alt]="food.title">
     <span class="heading">
