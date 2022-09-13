@@ -34,7 +34,7 @@
     },
     {
       "id": 5,
-      "title": "Taco",
+      "title": "Barbacoa",
       "price": "24990",
       "type": "taco",
       "image": "https://www.pngall.com/wp-content/uploads/4/Taco-PNG-Picture.png",
@@ -63,6 +63,38 @@
       "type": "drink",
       "image": "https://www.shopsmartsuperstore.co.uk/wp-content/uploads/2021/05/pp.png",
       "isfavorite": false
+    },
+    {
+      "id": 9,
+      "title": "Carne asada",
+      "price": "28800",
+      "type": "taco",
+      "image": "https://fastfoodnutrition.org/item-photos/full/163011779475555i.png",
+      "isfavorite": false
+    },
+    {
+      "id": 10,
+      "title": "Fried chicken",
+      "price": "22300",
+      "type": "chicken",
+      "image": "https://www.picng.com/upload/fried_chicken/png_fried_chicken_12753.png",
+      "isfavorite": true
+    },
+    {
+      "id": 11,
+      "title": "Fanta",
+      "price": "10000",
+      "type": "drink",
+      "image": "https://www.picng.com/upload/fanta/png_fanta_12645.png",
+      "isfavorite": true
+    },
+    {
+      "id": 12,
+      "title": "Chorizo taco",
+      "price": "25000",
+      "type": "taco",
+      "image": "https://www.taco123.com/images/thumbs/0000031_tacos_625.png",
+      "isfavorite": true
     }
   ]
 }
