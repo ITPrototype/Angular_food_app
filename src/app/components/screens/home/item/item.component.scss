@@ -3,10 +3,30 @@
 
     #icon_btn {
         position: absolute;
-        top: 36px;
-        right: 36px;
+        top: 0px;
+        right: 0px;
     }
-
+    position: relative;
+    overflow: hidden;
+    .old-price{
+        color: grey;
+        text-decoration: line-through;
+        text-align: center;
+        display: block;
+    }
+    .sale{
+        background-color: orange;
+        position: absolute;
+        left: -27px;
+        top: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: white;
+        height: 30px;
+        width: 90px;
+        transform: rotate(310deg);
+    }
     .title {
         @apply font-medium mb-2 block text-lg text-center;
     }

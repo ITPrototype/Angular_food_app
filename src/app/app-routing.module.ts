@@ -8,16 +8,15 @@ import { SaleComponent } from './components/screens/sale/sale.component';
 
 const routes: Routes = [
   {
-    path:'',component:HomeComponent
-  },{
-    path:'sale',component:SaleComponent
-  },{
-    path:'favorites',component:FavoriteComponent
-  },{
-    path:'profile',component:ProfileComponent
-  },{
-    path:'item/:id',
-    component:ItemComponent
+    path: '', component: HomeComponent
+  }, {
+    path: 'sale', component: SaleComponent
+  }, {
+    path: 'favorites', component: FavoriteComponent
+  }, {
+    path: 'profile', component: ProfileComponent
+  }, {
+    path: 'item/:id',component: ItemComponent
   }
 ];
 

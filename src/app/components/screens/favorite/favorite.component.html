@@ -13,11 +13,9 @@
                 {{item.price | currency:"ESKI: "}}
             </span>
         </div>
-        <div class="checkout" *ngIf="!item.sale">
-            <span class="price">
-                {{item.price | currency:"SO'M: "}}
-            </span>
-        </div>
+        <span class="price" *ngIf="!item.sale">
+            {{item.price | currency:"SO'M: "}}
+        </span>
     </div>
 </div>
 <div *ngIf="favourite.length === 0">

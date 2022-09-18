@@ -10,7 +10,6 @@ export class FoodService {
   constructor(
     private http: HttpClient
   ) { }
-s
   API_URL = 'http://localhost:3000/food';
 
   getAll() {

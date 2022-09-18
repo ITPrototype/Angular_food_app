@@ -7,8 +7,8 @@
       "type": "burger",
       "image": "https://www.pngkey.com/png/full/358-3587395_an-angus-beef-burger-from-mcdonalds-hamburger.png",
       "isfavorite": true,
-      "sale": "25",
-      "newPrice": "0"
+      "sale": "30",
+      "newPrice": "12600"
     },
     {
       "id": 2,
@@ -18,15 +18,16 @@
       "image": "https://www.nicepng.com/png/full/196-1966624_chicken-burger-png-picture-a-w-habanero-chicken.png",
       "isfavorite": false,
       "sale": "25",
-      "newPrice": "0"
+      "newPrice": "11250"
     },
     {
       "id": 3,
       "title": "BigMac",
-      "price": 16990,
+      "price": "16990",
       "type": "burger",
       "image": "https://www.pngkey.com/png/full/168-1682325_for-a-limited-time-your-favourite-burger-the.png",
-      "isfavorite": false
+      "isfavorite": false,
+      "newPrice": "NaN"
     },
     {
       "id": 4,
@@ -34,7 +35,8 @@
       "price": "17000",
       "type": "burger",
       "image": "https://www.pngplay.com/wp-content/uploads/1/Cheeseburger-PNG.png",
-      "isfavorite": false
+      "isfavorite": true,
+      "newPrice": "NaN"
     },
     {
       "id": 5,
@@ -51,8 +53,8 @@
       "type": "drink",
       "image": "https://www.pngall.com/wp-content/uploads/2016/04/Coca-Cola-PNG-Picture.png",
       "isfavorite": true,
-      "sale":15,
-      "newPrice":0
+      "sale": "15",
+      "newPrice": "8500"
     },
     {
       "id": 7,
