@@ -1,11 +1,22 @@
 <div *ngFor="let item of favourite">
     <div class="card">
         <div class="title-image">
+            <div class="sale" *ngIf="item.sale">{{item.sale}}%</div>
             <img [src]="item.image" [alt]="item.title">
             <h2>{{item.title}}</h2>
         </div>
-        <div>
-            <span>{{item.price | currency:"Narx: "}}</span>
+        <div class="check-price" *ngIf="item.sale">
+            <span class="price">
+                {{item.newPrice | currency:"YANGI: "}}
+            </span>
+            <span class="old-price">
+                {{item.price | currency:"ESKI: "}}
+            </span>
+        </div>
+        <div class="checkout" *ngIf="!item.sale">
+            <span class="price">
+                {{item.price | currency:"SO'M: "}}
+            </span>
         </div>
     </div>
 </div>

@@ -1,1 +1,18 @@
-<p>sale works!</p>
+<div class="content">
+    <div *ngFor="let item of foods">
+        <div class="card">
+            <div class="sale">{{item.sale}}%</div>
+            <div class="title-image">
+                <img [src]="item.image" class="sale-img" [alt]="item.title">
+                <h2 class="heading">{{item.title}}</h2>
+            </div>
+            <div>
+                <span class="old-price">{{item.price | currency:"Eski narx: "}}</span>
+                <span class="price">{{item.newPrice | currency:"Yangi narx: "}}</span>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="foods.length === 0">
+        <h1 class="no-food">No sales :(</h1>
+    </div>
+</div>

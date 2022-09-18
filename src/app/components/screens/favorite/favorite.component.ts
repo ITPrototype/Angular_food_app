@@ -12,14 +12,18 @@ export class FavoriteComponent implements OnInit {
     private fservice: FoodService
   ) { }
   favourite = []
+  newPrice:any
   ngOnInit(): void {
     this.fservice.getAll().subscribe(data => {
       data.map(product => {
         if (product.isfavorite === true) {
+          this.newPrice = (product.price*product.sale)/100
+          product.newPrice = product.price - this.newPrice
           this.favourite.push(product)
         }
       })
     })
+    
   }
 
 }

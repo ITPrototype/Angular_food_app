@@ -16,6 +16,8 @@ export class ItemComponent implements OnInit {
   image: string;
   isfav: boolean;
   type:string;
+  sale:number;
+  newPrice:number;
   icon: string = 'favorite_border'
   API: string = 'http://localhost:3000/food'
   private routeSubscription: Subscription;
@@ -24,11 +26,11 @@ export class ItemComponent implements OnInit {
     if (this.isfav === false) {
       this.isfav = true
       this.icon = 'favorite'
-      this.fservice.update(this.id + 1, this.isfav,this.title,this.image,this.price,this.type)
+      this.fservice.update(this.id + 1, this.isfav,this.title,this.image,this.price,this.type,this.sale,this.newPrice)
     } else {
       this.isfav = false
       this.icon = 'favorite_border'
-      this.fservice.update(this.id + 1, this.isfav,this.title,this.image,this.price,this.type)
+      this.fservice.update(this.id + 1, this.isfav,this.title,this.image,this.price,this.type,this.sale,this.newPrice)
     }
   }
   constructor(
@@ -42,7 +44,9 @@ export class ItemComponent implements OnInit {
         this.price = queryParam['price'];
         this.image = queryParam['img'];
         this.isfav = queryParam['isfavorite'];
-        this.type = queryParam['type']
+        this.type = queryParam['type'];
+        this.sale = queryParam['sale'];
+        this.newPrice = queryParam['newPrice']
       }
     )
   }
@@ -66,11 +70,11 @@ export class ItemComponent implements OnInit {
       if (this.isfav === true) {
         this.isfav = true
         this.icon = 'favorite'
-        this.fservice.update(this.id + 1, this.isfav,this.title,this.image,this.price,this.type)
+        this.fservice.update(this.id + 1, this.isfav,this.title,this.image,this.price,this.type,this.sale,this.newPrice)
       } else {
         this.isfav = false
         this.icon = 'favorite_border'
-        this.fservice.update(this.id + 1, this.isfav,this.title,this.image,this.price,this.type)
+        this.fservice.update(this.id + 1, this.isfav,this.title,this.image,this.price,this.type,this.sale,this.newPrice)
       }
     })
 

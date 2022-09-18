@@ -6,7 +6,9 @@
       "price": "18000",
       "type": "burger",
       "image": "https://www.pngkey.com/png/full/358-3587395_an-angus-beef-burger-from-mcdonalds-hamburger.png",
-      "isfavorite": false
+      "isfavorite": true,
+      "sale": "25",
+      "newPrice": "0"
     },
     {
       "id": 2,
@@ -14,7 +16,9 @@
       "price": "15000",
       "type": "burger",
       "image": "https://www.nicepng.com/png/full/196-1966624_chicken-burger-png-picture-a-w-habanero-chicken.png",
-      "isfavorite": false
+      "isfavorite": false,
+      "sale": "25",
+      "newPrice": "0"
     },
     {
       "id": 3,
@@ -46,7 +50,9 @@
       "price": "10000",
       "type": "drink",
       "image": "https://www.pngall.com/wp-content/uploads/2016/04/Coca-Cola-PNG-Picture.png",
-      "isfavorite": false
+      "isfavorite": true,
+      "sale":15,
+      "newPrice":0
     },
     {
       "id": 7,

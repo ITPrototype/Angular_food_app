@@ -1,0 +1,44 @@
+.content{
+    padding: 10px;
+    @apply flex flex-wrap flex-row justify-between;
+}
+.card {
+    @apply bg-white rounded mb-2 p-4 block text-center;
+    width: 250px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    .sale{
+        background-color: orange;
+        position: absolute;
+        left: -27px;
+        top: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: white;
+        height: 30px;
+        width: 90px;
+        transform: rotate(310deg);
+    }
+    &:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: 0.6s
+    }
+
+    .sale-img {
+        @apply mb-2 mx-auto;
+        height: 190px;
+    }
+
+    .heading {
+        @apply font-medium mb-2 block text-lg;
+    }
+    .old-price{
+        color: grey;
+        text-decoration: line-through;
+    }
+    .price {
+        @apply block text-orange-500 font-semibold;
+    }
+}

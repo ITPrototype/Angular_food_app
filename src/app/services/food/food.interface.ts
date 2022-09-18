@@ -4,5 +4,7 @@ export interface IFood{
     price:number
     type:string
     image:string
-    isfavorite:boolean
+    isfavorite:boolean,
+    sale:number,
+    newPrice:number
 }
