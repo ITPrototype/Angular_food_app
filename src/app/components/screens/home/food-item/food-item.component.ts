@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input,OnInit } from '@angular/core';
 import { IFood } from 'src/app/services/food/food.interface';
 
 @Component({
@@ -6,8 +6,12 @@ import { IFood } from 'src/app/services/food/food.interface';
   templateUrl: './food-item.component.html',
   styleUrls: ['./food-item.component.scss']
 })
-export class FoodItemComponent {
-
+export class FoodItemComponent implements OnInit {
+  
   @Input() food: IFood
-
+  newPrice:any
+  ngOnInit(): void {
+    this.newPrice = (this.food.price * this.food.sale)/100
+    this.food.newPrice = this.food.price-this.newPrice
+  }
 }
